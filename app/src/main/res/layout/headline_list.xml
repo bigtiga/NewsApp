@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardViewContainer"
+    android:elevation="8dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_weight="2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:maxLines="3"
+            android:id="@+id/title_text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#2757E6"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:id="@+id/source_text"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imgsrc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            android:layout_weight="1">
+        </ImageView>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

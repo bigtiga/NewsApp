@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_one"
+                android:text="business"
+                android:textSize="12sp"
+                android:layout_margin="6dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_two"
+                android:text="entertainment"
+                android:textSize="12sp"
+                android:layout_margin="6dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_three"
+                android:text="general"
+                android:textSize="12sp"
+                android:layout_margin="6dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_four"
+                android:text="health"
+                android:textSize="12sp"
+                android:layout_margin="6dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_five"
+                android:text="technology"
+                android:textSize="12sp"
+                android:layout_margin="6dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_six"
+                android:text="sports"
+                android:textSize="12sp"
+                android:layout_margin="6dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_seven"
+                android:text="source"
+                android:textSize="12sp"
+                android:layout_margin="6dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        android:layout_margin="14dp">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:iconifiedByDefault="false"
+            app:defaultQueryHint="Search News"
+            android:id="@+id/search_view">
+
+        </androidx.appcompat.widget.SearchView>
+
+    </androidx.cardview.widget.CardView>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:id="@+id/recyclerviewone"/>
+
+
+</LinearLayout>
